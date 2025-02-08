@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Timer with Circular Progress</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>TIMER</h1>
+      <div class="time-input">
+        <div class="time-data">
+          <h3>00 <span>Day</span></h3>
+          <input type="number" id="day" />
+        </div>
+        <div class="time-data">
+          <h3>00 <span>Hours</span></h3>
+          <input type="number" id="hour" />
+        </div>
+        <div class="time-data">
+          <h3>00 <span>Mins</span></h3>
+          <input type="number" id="min" />
+        </div>
+        <div class="time-data">
+          <h3>00 <span>Secs</span></h3>
+          <input type="number" id="sec" />
+        </div>
+      </div>
+
+      <!-- Circular Progress Bar -->
+      <div class="progress-container" style="display: none;">
+        <svg class="progress-ring" width="300" height="300">
+          <circle
+            class="progress-ring__circle"
+            stroke="green"
+            stroke-width="8"
+            fill="transparent"
+            r="100"
+            cx="150"
+            cy="150"
+          />
+        </svg>
+        
+        <div class="time-display">
+          <h3 id="day-display" class="time-unit">00</h3>
+          <h3 id="hour-display" class="time-unit">00</h3>
+          <h3 id="min-display" class="time-unit">00</h3>
+          <h3 id="sec-display" class="time-unit">00</h3>
+        </div>
+      </div>
+
+      <div class="btns">
+        <button>START</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

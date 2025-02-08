@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.time-input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.time-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.time-data h3 {
+  font-size: 3rem;
+}
+
+input {
+  height: 3rem;
+  width: 50%;
+  background-color: #262533;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.btns button {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 10rem;
+  background-color: #ff1550;
+  font-family: "Lato", sans-serif;
+  color: white;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.btns button:hover {
+  background-color: #e00038;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.time-input,
+.progress-container {
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  position: relative;
+}
+
+.btns {
+  margin-top: 20px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap:1rem;
+}
+
+.progress-ring {
+  transform: rotate(-90deg); /* Rotate to make it start at the top */
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+}
+
+/* Time display style inside the circle */
+.time-display {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex; 
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-display h3 {
+  font-size: 20px;
+  margin: 0;
+  display: inline-block;
+}
+
+.time-unit, .time-label {
+    display: block;
+  }
+  
+  .time-unit.active, .time-label.active {
+    display: inline;
+  }
+  
+
+/* .time-input {
+  margin: 20px 0;
+}
+
+.time-data {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+.btns button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btns button:hover {
+  background-color: #0056b3;
+}
+
+.btns {
+  text-align: center;
+} */

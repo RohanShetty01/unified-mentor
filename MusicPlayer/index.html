@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="head">PLAYER.IO</h1>
+    <div class="music-player">
+      <div class="music-div1">
+        <div class="music-image">
+          <img
+            src="https://i1.sndcdn.com/artworks-000129642585-3h6g4n-t500x500.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="music-div2">
+        <div class="song-info">
+          <h1>Song Name</h1>
+          <p>NCS (No Copyright Music)</p>
+        </div>
+        <div class="seek-bar">
+          <div style="width: 100%;">
+          <div class="seek-bar-outer">
+            <div class="seek-bar-inner"></div>
+          </div>
+          <div class="time-container">
+            <p>1:22</p>
+            <p>3:44</p>
+          </div>
+        </div>
+          <div class="controls">
+            <i class="fa-solid fa-backward"></i>
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-forward"></i>
+          </div>
+          <div class="volume-control">
+            <i class="fa-solid fa-volume-low"></i>
+            <input type="range" id="volume-control" min="0" max="100" value="100">
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="songs-container">
+      <h1>Songs</h1>
+      <div class="songs-list">
+      </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>

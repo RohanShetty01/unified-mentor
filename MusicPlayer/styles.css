@@ -1,0 +1,242 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+    position: relative;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,9,121,1) 44%, rgba(0,212,255,1) 100%);
+}
+
+.music-player {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 8rem;
+}
+
+.head {
+    position: absolute;
+    left: 50%;
+    top: 2rem;
+    transform: translateX(-50%);
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.music-div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 60%;
+}
+.music-div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.music-image img {
+    width: 20rem;
+    border-radius: 3rem;
+}
+
+.song-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.songs-container h1 {
+    padding-bottom: 0.5rem;
+
+}
+
+.song-info h1 {
+    font-size: 4rem;
+    font-weight:lighter;
+    text-align: center;
+    color: white;
+}
+.song-info p {
+    font-size: 1rem;
+    font-weight:normal;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.songs-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.seek-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    padding-top: .5rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.controls i {
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+}
+
+.controls i:hover {
+    color: rgb(43, 43, 43);
+}
+
+.songs-container {
+    padding: 1rem 4rem;
+}
+
+.songs-container h1{
+    color: white;
+}
+
+.tile img {
+    width: 3rem;
+    border-radius: 0.5rem;
+}
+
+.tile {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 2rem;
+    width: 100%;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: all .2s ease;
+}
+
+.tile:hover {
+    cursor: pointer;
+    background-color: #00cdfa;
+}
+
+.seek-bar-outer {
+    width: 100%;
+    height: 0.6rem;
+    border-radius: 1rem;
+    background-color: #9c988b;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.seek-bar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+    transition: width 0.3s ease;
+}
+
+#volume-control {
+    -webkit-appearance: none; /* Remove default slider styling */
+    width: 20rem; /* Make it responsive */
+    height: 0.5rem; /* Height of the slider track */
+    border-radius: 5px; /* Rounded track */
+    outline: none; /* Remove default outline */
+    cursor: pointer;
+    background: linear-gradient(
+    to right,
+    #1db954 0%,
+    #1db954 var(--slider-value),
+    #ddd var(--slider-value),
+    #ddd 100%
+  );
+  }
+  
+  /* Styling for the slider thumb */
+  #volume-control::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 0; /* Thumb size */
+    height: 0; /* Thumb size */
+    background: white; /* Thumb color */
+    cursor: pointer; /* Cursor change on hover */
+  }
+  
+  /* Add hover effect on thumb */
+  #volume-control::-webkit-slider-thumb:hover {
+    background: #e9ecef;
+  }
+  
+  /* Add focus styles for accessibility */
+  #volume-control:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 8px #1db954;
+  }
+  
+  /* For Mozilla Firefox */
+  #volume-control::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 2px solid #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #volume-control::-moz-range-progress {
+    background: #1db954;
+  }
+  
+  #volume-control::-moz-range-track {
+    background: #dddddd;
+    border-radius: 5px;
+  }
+  
+  .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+  }
+
+  .volume-control i {
+    font-size: 1.5rem;
+    color: white;
+  }

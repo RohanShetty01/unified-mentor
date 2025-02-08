@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #d6d8d7;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.location {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: .5rem;
+}
+
+.location span {
+    font-size: small;
+    font-weight: 400;
+}
+
+.location i{
+    font-size: 1.4rem;
+}
+
+.navbar input {
+    padding-left: 12px;
+    height: 2.3rem;
+    outline: none;
+    width: 20rem;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.main-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-inner-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.image-div img {
+    width: 20rem;
+}
+
+.main-inner-div h1 {
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.black-div {
+    background-color: black;
+    width: 16rem;
+    height: 16rem;
+    color: white;
+    padding: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.black-div h1 {
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.black-div div {
+    display: flex;
+    gap: 1rem;
+}
+
+.extra-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.extra-info {
+    background-color: #fff;
+    padding: 1.5rem 3rem;
+    border-radius: 6rem;
+}
+
+.extra-info h3 {
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.extra-info p {
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding-top: 0.3rem;
+}
+
+.extra-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.other-details-container {
+    padding: 5rem 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.other-data {
+    background-color: #fff;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: .2rem;
+    flex: 1 1 33.33%;
+}
+
+.other-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.other-icon i {
+    font-size: 10rem;
+}
+
+.other-data h5 {
+    font-size: 2rem;
+}
+.other-data p {
+    font-weight: 300;
+}
+
+.sub {
+    font-size: .8rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+footer img {
+    width: 10rem;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field p{
+    font-size: 13px;
+}
+
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    top: 105%;
+    background: white;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 15px;
+}
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion-item span {
+    font-weight: 300;
+    font-size: .8rem;
+}
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.loading-container {
+    width: 100%;
+    height: calc(100vh - 8rem);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #d6d8d7;
+}

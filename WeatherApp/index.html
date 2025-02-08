@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather.Me</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/46bc4b59ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span id="current-location">--</span>
+      </div>
+      <div class="input-field">
+        <input
+          type="text"
+          placeholder="Enter city name"
+          id="locationInput"
+          oninput="handleLocation(event)"
+          list="locationSuggestions"
+        />
+        <p>
+          <span style="color: red; font-size: 1.5rem">*</span>please enter exact
+          name of the location
+        </p>
+        <div
+          id="suggestionsBox"
+          class="suggestions"
+          style="display: none"
+        ></div>
+      </div>
+    </nav>
+    <div class="loading-container">
+      <h1>Loading...</h1>
+    </div>
+    <div class="main-container">
+      <div class="main-div">
+        <div class="main-inner-div">
+          <div class="image-div">
+            <img src="./Images/cloudy.png" alt="" id="weather-icon" />
+          </div>
+          <h1 id="weather-text">--</h1>
+          <p id="weather-description">...</p>
+        </div>
+        <div class="extra-container">
+          <div class="black-div">
+            <h1><span id="main-temp">00</span>&deg;</h1>
+            <div>
+              <p>H: <span id="temp-high">00</span>&deg;</p>
+              <p>L: <span id="temp-low">00</span>&deg;</p>
+            </div>
+          </div>
+          <div class="extra-div">
+            <div class="extra-info">
+              <h3>AIR QUALITY <span id="aqi">00</span></h3>
+              <p id="aqi-info">--</p>
+            </div>
+            <div class="extra-info">
+              <h3>REAL FEEL <span id="real-feel">00</span>&deg;</h3>
+              <p id="real-feel-info">--</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="other-details-container">
+        <div class="other-data">
+          <p>HUMIDITY</p>
+          <div class="other-icon">
+            <i class="fi fi-ss-blood"></i>
+          </div>
+          <h5 id="humidity">--%</h5>
+        </div>
+        <div class="other-data">
+          <p>WIND SPEED</p>
+          <div class="other-icon">
+            <i class="fi fi-ts-tachometer-fast"></i>
+          </div>
+          <h5><span id="wind-speed">--</span> <sub class="sub">KM/H</sub></h5>
+        </div>
+        <div class="other-data">
+          <p>SUNRISE</p>
+          <div class="other-icon">
+            <i class="fi fi-ts-sunrise"></i>
+          </div>
+          <h5 id="sunrise-time">-- : -- --</h5>
+        </div>
+        <div class="other-data">
+          <p>SUNSET</p>
+          <div class="other-icon">
+            <i class="fi fi-ts-sunset"></i>
+          </div>
+          <h5 id="sunset-time">-- : -- --</h5>
+        </div>
+      </div>
+      <footer>
+        <p>Weather data provided by</p>
+        <img src="./Images/logo.png" alt="" />
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
